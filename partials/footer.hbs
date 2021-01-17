@@ -1,5 +1,13 @@
 <footer class="site-footer container">
     <div class="social">
+        {{#if @site.facebook}}
+            <a class="social-item social-item-facebook"
+                href="{{facebook_url @site.facebook}}" target="_blank"
+                rel="noopener noreferrer" aria-label="Facebook">
+                <svg class="icon">
+                    <use xlink:href="#facebook-box"></use>
+                </svg>
+            </a>
         {{/if}}
         {{#if @site.twitter}}
             <a class="social-item social-item-twitter"
